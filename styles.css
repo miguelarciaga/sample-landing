@@ -1,0 +1,313 @@
+:root {
+    --kmc-blue: #001435;
+    --kmc-orange: #FF7200;
+    --kmc-white: #FDFDFD;
+    --kmc-black: #0A0A0A;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Karla', sans-serif;
+    letter-spacing: -1px;
+}
+
+html, body {
+    color: var(--kmc-blue)
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.main-section {
+    padding: 50px 200px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 25px 0px;
+}
+
+.card {
+    padding: 50px 65px;
+    border-radius: 25px;
+}
+
+.card.heading {
+    background-color: var(--kmc-blue);
+    gap: 65px;
+    color: var(--kmc-white);
+    align-items: center;
+    justify-content: center;
+}
+
+.card.heading>section:first-child {
+    gap: 65px;
+}
+
+.card.heading>section {
+    gap: 18px;
+    flex: 1;
+}
+
+.card.heading>section>h2,
+.card.heading>section>h3 {
+    font-size: 52px;
+    font-weight: bold;
+    letter-spacing: -4px;
+}
+
+.card.heading>section>h3 {
+    font-size: 36px;
+}
+
+.card.heading>section>h3>span {
+    color: var(--kmc-orange)
+}
+
+
+input {
+    padding: 12px 24px;
+    border: 1px solid #bebebe;
+    background-color: transparent;
+    border-radius: 8px;
+    color: var(--kmc-white)
+}
+
+button {
+    padding: 12px 24px;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    border-radius: 10px;
+    width: fit-content;
+    font-weight: 500;
+    font-size: 18px;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+button.primary {
+    background-color: var(--kmc-orange);
+    color: var(--kmc-white);
+}
+
+section#hero {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 0px;
+}
+
+.heading-image-placeholder {
+    background-color: #1e1e1e20;
+    width: 100%;
+    min-height: 500px;
+    border-radius: 25px;
+}
+
+.brands-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1rem;
+}
+
+.brand-image-placeholder {
+    background-color: #1e1e1e20;
+    width: 100%;
+    min-height: 40px;
+    border-radius: 50px;
+}
+
+.item-card {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    align-items: center;
+}
+
+.item-card > p {
+    text-align: center;
+}
+
+.item-card-image-placeholder {
+    aspect-ratio: 1/1;
+    min-width: 100px;
+    height: auto;
+    background-color: #1e1e1e20;
+    border-radius: 15px;
+}
+
+.item-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem
+}
+
+.item-card-container > .item-card {
+    width: 23%;
+}
+
+section#why-choose-kmc {
+    background-color: #00143508;
+    gap: 1rem;
+}
+
+.section-heading {
+    font-size: 36;
+    font-weight: 500;
+}
+
+.section-heading > span {
+    color: var(--kmc-orange);
+}
+
+.section-sub-heading {
+    font-size: 16px;
+}
+
+.list-item {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+}
+
+.list-item h5 {
+    font-size: 20px;
+}
+
+section#full-service-eor-solutions {
+    align-items: center;
+    gap: 1rem;
+}
+
+section#full-service-eor-solutions > p {
+    text-align: center;
+}
+
+.card#discover-card {
+    flex-direction: column;
+    background-color: var(--kmc-blue);
+    gap: 10px;
+    color: var(--kmc-white);
+    align-items: center;
+    justify-content: center;
+    padding: 50px 200px;
+}
+
+#discover-card > h2 {
+    font-size: 56px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: -4px;
+}
+
+#discover-card > p {
+    font-size: 16px;
+    color: #FDFDFD70;
+    text-align: center;
+}
+
+section#why-the-philippines {
+    background-color: #00143508;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+section#what-our-clients-are-saying {
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+#what-our-clients-are-saying > p {
+    font-size: 16px;
+    text-align: center;
+}
+
+section#main-cta {
+    background-color: var(--kmc-orange);
+    color: var(--kmc-white);
+    gap: 128px;
+    justify-content: center;
+    align-items: center
+}
+
+#main-cta h2 {
+    font-size: 100px;
+    font-weight: 800;
+    letter-spacing: -5px;
+    line-clamp: 2;
+    flex: 1;
+}
+
+#main-cta button {
+    border-radius: 9999px;
+    aspect-ratio: 1/1;
+    height: 200px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 100px;
+    color: var(--kmc-orange);
+}
+
+footer {
+    gap: 50px;
+}
+
+#company-details {
+    gap: 15px;
+    font-size: 14px;
+}
+
+.copyright {
+    color: #00143550;
+}
+
+#social-media-container {
+    gap: 10px
+}
+
+button.social-media {
+    border-radius: 9999px;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 1px solid var(--kmc-orange);
+    color: var(--kmc-orange);
+    fill: var(--kmc-orange);
+    padding: 0;
+    width: 38px;
+    height: 38px;
+}
+
+#terms-and-policies {
+    gap: 20px;
+    color: #00143550;
+}
